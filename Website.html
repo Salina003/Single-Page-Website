@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        .color-teal{
+            color:teal;
+        }
+        .icon-lg{
+            font-size: 60px;
+        }
+        .icon-sm{
+            font-size: 30px;
+        }
+        .remove-bullets{
+            list-style: none;
+        }
+        .remove-text-decoration{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="foodlogo1.png" height="50" alt="Brand Logo">
+                    <a class="navbar-brand fw-bold fs-2 text-warning" href="#">Food Haven</a>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <div class="navbar-nav ms-auto">
+                        <a href="#home" class="nav-item nav-link active text-light">Home</a>
+                        <a href="#menu" class="nav-item nav-link text-light">Menu</a>
+                        <a href="#specials" class="nav-item nav-link text-light">Specials</a>
+                        <a href="#contact" class="nav-item nav-link text-light">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="carousel1.jpg" class="d-block w-100" alt="Carousel 1" style="max-height: 100vh;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="fw-bold">Welcome to Food Haven</h1>
+                        <p>Where flavor meets passion</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="carousel2.jpg" class="d-block w-100" alt="Carousel 1" style="max-height: 100vh;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="fw-bold">Delicious & Fresh</h1>
+                        <p>We serve only the best quality food</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="carousel3.jpg" class="d-block w-100" alt="Carousel 1" style="max-height: 100vh;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="fw-bold">Sweet Endings</h1>
+                        <p>Perfect desserts for every occasion</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+    <main class="m-5">
+        <section id="menu">
+            <div class="container">
+                <h6 class="display-5 text-center fw-bold text-warning">Our Menu</h6>
+                <div class="row m-3 g-4">
+                    <!-- Starters -->
+                    <div class="col-md-4">
+                        <h4 class="text-danger"><i class="bi bi-egg-fried"></i> Starters</h4>
+                        <ul class="list-group shadow-sm">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Garlic Bread <button type="button" class="btn btn-danger">Rs.100</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Tomato Soup <button type="button" class="btn btn-danger">Rs.200</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Spring Roll <button type="button" class="btn btn-danger">Rs.200</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Crispy Babycorn <button type="button" class="btn btn-danger">Rs.210</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             French Fries <button type="button" class="btn btn-danger">Rs.220</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Paneer Pakora <button type="button" class="btn btn-danger">Rs.230</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Main Course -->
+                    <div class="col-md-4">
+                        <h4 class="text-danger"><i class="bi bi-fork-knife"></i> Main Course</h4>
+                        <ul class="list-group shadow-sm">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Grilled Chicken <button type="button" class="btn btn-danger">Rs.400</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Veg Biryani <button type="button" class="btn btn-danger">Rs.400</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Chicken Biryani <button type="button" class="btn btn-danger">Rs.450</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Mutton Biryani <button type="button" class="btn btn-danger">Rs.500</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Pizza <button type="button" class="btn btn-danger">Rs.500</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             pasta <button type="button" class="btn btn-danger">Rs.410</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Desserts -->
+                    <div class="col-md-4">
+                        <h4 class="text-danger"><i class="bi bi-cake"></i> Desserts</h4>
+                        <ul class="list-group shadow-sm">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Ice Cream<button type="button" class="btn btn-danger">Rs.200</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Chocolate Lava Cake  <button type="button" class="btn btn-danger">Rs.300</button>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                             Cheesecake <button type="button" class="btn btn-danger">Rs.300</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="specials" class="container m-4">
+            <h6 class="display-5 text-center fw-bold text-warning">Today's Specials</h6>
+            <div class="container">
+                <div class="row m-5">
+                    <div class="col-md-4 d-flex aling-item-center justify-content-center">
+                        <div class="card" style="width: 300px; height: fit-content;" >
+                            <img class="card-img-top" src="Grilled-Chicken.webp">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Grilled Chicken</h4>
+                                <p class="card-text">Rs.350</p>
+                                <button class="btn btn-danger">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex aling-item-center justify-content-center">
+                        <div class="card" style="width: 300px; height: fit-content;" >
+                            <img class="card-img-top" src="soup.jpg">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Hot Soup</h4>
+                                <p class="card-text">Rs.250</p>
+                                <button class="btn btn-danger">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex aling-item-center justify-content-center">
+                        <div class="card" style="width: 300px; height: fit-content;" >
+                            <img class="card-img-top" src="cake.jpg">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Chocolate Cake</h4>
+                                <p class="card-text">Rs.300</p>
+                                <button class="btn btn-danger">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="container m-4">
+            <h6 class="display-5 text-center fw-bold">Contact Us</h6>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container p-3">
+                        <p class="text-muted text-center fs-3">Here's our Contact Info</p>
+                        <div class="text-black-s text-center fs-4">Our Email</div>
+                        <div class="text-black-50 text-center fs-5">support@example.com</div>
+                        <div class="text-black-s text-center fs-4">Our Phone No.</div>
+                        <div class="text-black-50 text-center fs-5">+91 1234567890</div>
+                        <div class="text-black-s text-center fs-4">Our Address</div>
+                        <div class="text-black-50 text-center fs-5">123 Food Street, Bangalore</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                        <div class="container p-3">
+                            <p class="text-muted text-center fs-3">Your Review</p>
+                            <div class="container">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="name" class="form label">Enter Your Names</label>
+                                                <input type="text" class="form-control" name="name" id="name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="name" class="form label">Enter Your Email</label>
+                                                <input type="email" class="form-control" name="email" id="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message" class="form-label">Enter Your Experience</label>
+                                                <textarea class="form-control" name="message" id="message"></textarea>
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <input type="submit" class="btn btn-outline-dark mt-2" value="Send Message">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container m-5">
+                        <img src="foodlogo1.png" height="30px" class="bg-white">
+                        <div>
+                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda non facilis est optio quidem molestiae laborum praesentium nihil voluptate dolorum nemo, delectus suscipit, harum eaque voluptas ullam maxime officiis a et similique sapiente obcaecati aspernatur at perspiciatis. Ex facilis consequatur numquam, voluptates cum provident iure inventore corporis saepe dolores eius a quibusdam veniam non tempora ducimus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="container m-5">
+                        <p class="text-white fs-5">Quick Links</p>
+                        <ul class="remove-bulltes remove-text-decoration">
+                        <li><a href="#menu" class="remove-text-decoration text-white">Menu</a></li>
+                        <li><a href="#contact" class="remove-text-decoration text-white">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-white text-center">
+                    <p>All rights reserve&copy 2022, <a href="FoodHaven.ai">FoodHaven.ai</a></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
